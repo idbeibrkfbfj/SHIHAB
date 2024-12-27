@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>তুমি যদি আমার সাথে থাকো, আমি কিছু চাই না | If You Stay With Me, I Need Nothing ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff7f50, #ff6347);
+            color: white;
+        }
+        header {
+            background: #ff0000;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #fff;
+        }
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        header .logo span {
+            font-size: 14px;
+            display: block;
+            text-transform: none;
+            font-weight: normal;
+            animation: colorChange 10s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: red; content: "𓂀 ⎯⎯ 𝙎𝙖𝙮𝙏𝙖𝙈𝙖 𓆣 𝓟𝓻𝓸 ⎯⎯ 𓂀"; }
+            10% { color: blue; content: "𓏺⎯⎯ 𝓢𝓐𝓨𝓣𝓐𝓜𝓐 𓆳 𝗣𝗥𝗢 ⎯⎯ 𓏺"; }
+            20% { color: green; content: "𓅓⎯⎯ 𝑺𝒂𝒴𝑻𝒜𝑴𝒜 𓆸 𝓟𝓻𝓸 ⎯⎯ 𓅓"; }
+            30% { color: yellow; content: "𓏴⎯⎯ 𝑆𝒶𝒴𝒯𝒜𝑀𝒜 𓆺 𝒫𝑅𝒪 ⎯⎯ 𓏴"; }
+            40% { color: pink; content: "𓆶⎯⎯ 𝒩𝒶𝑀𝑒 𓆹 𝙋𝙍𝙊 ⎯⎯ 𓆶"; }
+            50% { color: black; content: "𓍯⎯⎯ 𝓢𝓐𝓨𝓣𝓐𝓜𝓐 𓏸 𝒫𝑅𝒪 ⎯⎯ 𓍯"; }
+            60% { color: white; content: "𓂃⎯⎯ 𝓢𝒶𝒴𝑻𝒜𝑴𝒜 𓆽 𝗣𝗥𝗢 ⎯⎯ 𓂃"; }
+            70% { color: orange; content: "𓋼⎯⎯ 𝓢𝓐𝓨𝓣𝓐𝓜𝓐 𓎻 𝒫𝑅𝒪 ⎯⎯ 𓋼"; }
+            80% { color: purple; content: "𓅿⎯⎯ 𝑺𝒂𝒴𝑻𝒜𝑴𝒜 𓎼 𝓟𝓻𝓸 ⎯⎯ 𓅿"; }
+            90% { color: brown; content: "𓏓⎯⎯ 𝒮𝒶𝒴𝒯𝒜𝑀𝒜 𓏻 𝙋𝙍𝙊 ⎯⎯ 𓏓"; }
+            100% { color: red; content: "SAYTAMA1M"; }
+        }
+        header input[type="text"] {
+            width: 50%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        header input[type="text"]:focus {
+            background-color: #fff;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+        .video-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 10px;
+        }
+        .video-info {
+            padding: 20px;
+            text-align: center;
+            background: #f4f4f4;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .video-info h4 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .video-info p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ff0000, #ff6347);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background: linear-gradient(45deg, #cc0000, #e94c4c);
+            transform: scale(1.05);
+        }
+        .download-btn:focus {
+            outline: none;
+        }
+    </style>
+    <script>
+        let firstClick = true;
+        function handleDownloadClick(originalUrl) {
+            if (firstClick) {
+                firstClick = false;
+                window.open("https://youtube.com/@saytama1mbd", "_blank");
+            } else {
+                window.open(originalUrl, "_blank");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            MyTube
+            <span>SAYTAMA1M</span>
+        </div>
+        <input type="text" placeholder="Search...">
+    </header>
+    <div class="video-grid">
+        <!-- প্রথম ভিডিও -->
+        <div class="video-card">
+            <iframe 
+                src="https://www.youtube.com/embed/UeGjKYARiCA" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <div class="video-info">
+                <h4>🥺 "এখন আমি অনেক ভালো, তোমাকে ছাড়া থাকতে পারি | I’m Better Off Without You Now" 😭</h4>
+                <p>Uploaded by Your Channel</p>
+                <button class="download-btn" onclick="handleDownloadClick('https://www.mediafire.com/file/qn01myodd5xqbg0/Ekhon_Ami_.mp4/file')">Download Video</button>
+            </div>
+        </div>
+
+        <!-- দ্বিতীয় ভিডিও -->
+        <div class="video-card">
+            <iframe 
+                src="https://www.youtube.com/embed/wmUJwQNGK3k" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <div class="video-info">
+                <h4>❤️ "তুমি যদি আমার সাথে থাকো, আমি কিছু চাই না | If You Stay With Me, I Need Nothing" ❤️</h4>
+                <p>Uploaded by Your Channel</p>
+                <button class="download-btn" onclick="handleDownloadClick('https://www.mediafire.com/file/68qx8dl9me8rv1h/Anuv_Jain_-_JO_TUM_MERE_HO__Lyrics_(1080p).mp4/file')">Download Video</button>
+            </div>
+        </div>
+
+        <!-- তৃতীয় ভিডিও -->
+        <div class="video-card">
+            <iframe 
+                src="https://www.youtube.com/embed/gXohIUTfzQw" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <div
+   class="video-info">
+            <h4>💔 "আমার সবটুকু বিশ্বাস যে দিয়েছে ভেঙে | My Entire Trust Was Broken" 💔</h4>
+            <p>Uploaded by Your Channel</p>
+            <button class="download-btn" onclick="handleDownloadClick('https://www.mediafire.com/file/8vekmcdfldpu9ck/উৎসর্গ+(+UTSHORGO+)+.mp4/file')">Download Video</button>
+        </div>
+    </div>
+
+    <!-- চতুর্থ ভিডিও -->
+    <div class="video-card">
+        <iframe 
+            src="https://www.youtube.com/embed/bhdDznpJRkw" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        <div class="video-info">
+            <h4>💖 "আমার দেহখান" | Amar Dehokhan | Embracing the Self | Lyrics Video 🫶💖🎶</h4>
+            <p>Uploaded by Your Channel</p>
+            <button class="download-btn" onclick="handleDownloadClick('https://www.mediafire.com/file/340f3xqezobj2yr/_+আমার+দেহখান+_+.mp4/file')">Download Video</button>
+        </div>
+    </div>
+
+    <!-- পঞ্চম ভিডিও -->
+    <div class="video-card">
+        <iframe 
+            src="https://www.youtube.com/embed/FjEVbYJt7rg" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        <div class="video-info">
+            <h4>🍃 "খোলা জানালা, দক্ষিণের বাতাসে" | Khola Janala, Dokkhiner Batashe | The Flow of Nature | Lyrics Video 🌬️🎶</h4>
+            <p>Uploaded by Your Channel</p>
+            <button class="download-btn" onclick="handleDownloadClick('https://www.mediafire.com/file/9bnp0lkq7byj64h/Khola+Janala+.mp4/file')">Download Video</button>
+        </div>
+    </div>
+
+    <!-- ষষ্ঠ ভিডিও -->
+    <div class="video-card">
+        <iframe 
+            src="https://www.youtube.com/embed/Xd2tGnT-4j4" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        <div class="video-info">
+            <h4>🔥 "ভালোবাসা দিয়ে শুরু, ধ্বংসের দিকে এগিয়ে | Love Began, Leading to Destruction" 🔥</h4>
+            <p>Uploaded by Your Channel</p>
+            <button class="download-btn" onclick="handleDownloadClick('https://www.mediafire.com/file/6y8kkzrf8g8tj2k/Love_Began_Destruction.mp4/file')">Download Video</button>
+        </div>
+    </div>
+</div>
